@@ -1,0 +1,87 @@
+{% from "_includes/forms" import textField, lightswitchField, autosuggestField %}
+
+{{ autosuggestField({
+    label: 'Installation ID'|t('commerce'),
+    id: 'installationId',
+    class: 'ltr',
+    name: 'installationId',
+    suggestEnvVars: true,
+    value: gateway.installationId,
+    errors: gateway.getErrors('installationId')
+}) }}
+
+{{ autosuggestField({
+    label: 'Account ID'|t('commerce'),
+    id: 'accountId',
+    class: 'ltr',
+    name: 'accountId',
+    suggestEnvVars: true,
+    value: gateway.accountId,
+    errors: gateway.getErrors('accountId')
+}) }}
+
+{{ autosuggestField({
+    label: 'Secret Word'|t('commerce'),
+    id: 'secretWord',
+    class: 'ltr',
+    name: 'secretWord',
+    suggestEnvVars: true,
+    value: gateway.secretWord,
+    errors: gateway.getErrors('secretWord')
+}) }}
+
+{{ autosuggestField({
+    label: 'Callback Password'|t('commerce'),
+    id: 'callbackPassword',
+    class: 'ltr',
+    name: 'callbackPassword',
+    suggestEnvVars: true,
+    value: gateway.callbackPassword,
+    errors: gateway.getErrors('callbackPassword')
+}) }}
+
+{{ lightswitchField({
+        label: "Test mode"|t('commerce'),
+        name: 'testMode',
+        on: gateway.testMode,
+        errors: gateway.getErrors('testMode'),
+}) }}
+
+{{ lightswitchField({
+        label: "No language menu"|t('commerce'),
+        name: 'noLanguageMenu',
+        on: gateway.noLanguageMenu,
+        errors: gateway.getErrors('noLanguageMenu'),
+}) }}
+
+{{ lightswitchField({
+        label: "Fix contact"|t('commerce'),
+        name: 'fixContact',
+        on: gateway.fixContact,
+        errors: gateway.getErrors('fixContact'),
+}) }}
+
+{{ lightswitchField({
+        label: "Hide contact"|t('commerce'),
+        name: 'hideContact',
+        on: gateway.hideContact,
+        errors: gateway.getErrors('hideContact'),
+}) }}
+
+{{ lightswitchField({
+        label: "Hide currency"|t('commerce'),
+        name: 'hideCurrency',
+        on: gateway.hideCurrency,
+        errors: gateway.getErrors('hideCurrency'),
+}) }}
+
+{{ autosuggestField({
+    label: 'Signature fields'|t('commerce'),
+    id: 'signatureFields',
+    class: 'ltr',
+    name: 'signatureFields',
+    suggestEnvVars: true,
+    value: gateway.signatureFields,
+    errors: gateway.getErrors('signatureFields')
+}) }}
+
