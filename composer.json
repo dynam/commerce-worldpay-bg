@@ -18,7 +18,11 @@
     }
   ],
   "support": {
-    "email": "web@dynam.co.uk"
+    "email": "web@dynam.co.uk",
+    "issues": "https://github.com/dynam/commerce-worldpay-bg/issues",
+    "source": "https://github.com/dynam/commerce-worldpay-bg",
+    "docs": "https://github.com/dynam/commerce-worldpay-bg",
+    "rss": "https://github.com/dynam/commerce-worldpay-bg/commits/master.atom"
   },
   "require": {
     "craftcms/cms": "^3.1.5",
